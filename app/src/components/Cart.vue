@@ -16,9 +16,9 @@
                 <tbody>
                     <tr v-for="item in cartStore.items" :key="item.id">
                         <td>{{ truncateLength(item.title) }}</td>
-                        <td>₹{{ item.price.toFixed(1) }}</td>
+                        <td>${{ item.price.toFixed(1) }}</td>
                         <td>{{ item.quantity }}</td>
-                        <td>₹{{ (item.price * item.quantity).toFixed(1) }}</td>
+                        <td>${{ (item.price * item.quantity).toFixed(1) }}</td>
                         <td>
                             <button @click="cartStore.incProduct(item.id)">➕</button>
                             <button @click="cartStore.decProduct(item.id)">➖</button>
@@ -30,12 +30,12 @@
             <!-- Styled Cart Summary -->
             <div class="cart-summary">
                 <p><strong>Total Items:</strong> <span class="highlight">{{ cartStore.totalItems }}</span></p>
-                <p><strong>Total Price:</strong> <span class="price">₹{{ cartStore.totalPrice.toFixed(2) }}</span></p>
+                <p><strong>Total Price:</strong> <span class="price">${{ cartStore.totalPrice.toFixed(2) }}</span></p>
                 <p v-if="cartStore.discountAmount > 0">
                     <strong>Discount (10% off):</strong> 
-                    <span class="discount">-₹{{ cartStore.discountAmount.toFixed(2) }}</span>
+                    <span class="discount">-${{ cartStore.discountAmount.toFixed(2) }}</span>
                 </p>
-                <p><strong>Final Price:</strong> <span class="final-price">₹{{ cartStore.finalPrice.toFixed(2) }}</span></p>
+                <p><strong>Final Price:</strong> <span class="final-price">${{ cartStore.finalPrice.toFixed(2) }}</span></p>
             </div>
 
             <!-- Styled Clear All Button -->
