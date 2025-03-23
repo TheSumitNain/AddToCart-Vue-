@@ -1,29 +1,31 @@
-# app
+# 🛒 Vue Add to Cart Application
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple **Add to Cart** functionality built with **Vue 3, Pinia, and Vite**. This application allows users to add, update, and remove items from the shopping cart while managing the cart state efficiently.
 
-## Recommended IDE Setup
+## 🚀 Features
+- ✅ Add products to the cart  
+- ✅ Increase or decrease item quantity  
+- ✅ Remove items from the cart  
+- ✅ State management with **Pinia**  
+- ✅ Persistent cart state with **Pinia Plugin PersistedState**  
+- ✅ Responsive design  
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🛠️ Technologies Used
+- ⚡ **Vue 3** (`^3.5.13`)
+- 📌 **Pinia** for State Management
+- 🔥 **Pinia PersistedState** for LocalStorage support
+- 🚀 **Vue Router** for navigation (if applicable)
+- ⚡ **Vite** for Development & Build
 
-## Customize configuration
+## 📂 Project Setup
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+### 1️⃣ Clone the Repository
 ```sh
-npm install
-```
+git clone https://github.com/TheSumitNain/AddToCart-Vue-
+cd app
 
-### Compile and Hot-Reload for Development
-
-```sh
+THEN
+npm i
 npm run dev
-```
+then open http://localhost:5173/
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
